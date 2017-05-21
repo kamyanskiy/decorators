@@ -8,9 +8,9 @@ def cache_decorator(func):
     @wraps(func)
     def wrapper(arg):
         if user_cache.get(arg):
-            value = user_cache.get(arg)
-            return value
+            return user_cache.get(arg)
         result = func(arg)
+        # set key-value in dict
         user_cache[arg] = result
         return result
     return wrapper
