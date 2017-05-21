@@ -13,7 +13,7 @@ $ pip install -r requirements.txt
 $ python test_cache_decorator.py
 
 $ ipython
-
+```
 >>> In [1]: import cache_decorator
 ### First time value is calculated, written to cache
 >>> In [2]: cache_decorator.get_long_response(44)
@@ -24,3 +24,4 @@ $ ipython
 >>> In [3]: cache_decorator.get_long_response(44)
 >>> FROM CACHE: user id=44, some result: 708245a5872742c38a77e07847f583f4
 >>> Out[3]: (True, '708245a5872742c38a77e07847f583f4')
+```

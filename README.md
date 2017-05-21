@@ -9,6 +9,7 @@ $ source .venv/bin/activate
 $ python test_simple_decorator.py
 
 $ python
+```
 >>> import simple_decorator
 ### First time value is calculated, written to cache
 >>> simple_decorator.get_long_response(3)
@@ -16,4 +17,4 @@ $ python
 ### Second time it returns from cache (by key from dict)
 >>> simple_decorator.get_long_response(3)
 >>> Out[6]: 3000
-
+```
